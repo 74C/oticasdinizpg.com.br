@@ -41,7 +41,7 @@ body {
     width: 100%;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     box-shadow: var(--shadow);
     transition: var(--transition);
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .logo img {
-    height: 60px;
+    height: 100px;
     width: auto;
     transition: var(--transition);
 }
