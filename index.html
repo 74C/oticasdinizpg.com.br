@@ -3,34 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diniz Prime Ponta Grossa - Ótica premium com as melhores marcas de óculos de luxo. Av. Vicente Machado, 525.">
-    <meta name="keywords" content="ótica, óculos, Diniz Prime, Ponta Grossa, óculos de luxo, armações">
-    <title>Diniz Prime | Ótica Premium em Ponta Grossa</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Diniz Prime Plaza Campos Gerais - Ótica premium em Ponta Grossa. As melhores marcas de óculos com exclusividade e sofisticação.">
+    <meta name="keywords" content="ótica, óculos, Diniz Prime, Plaza Campos Gerais, Ponta Grossa, óculos de luxo, armações, lentes">
+    <meta name="author" content="Diniz Prime">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dinizprimeplazapg.com.br/">
+    <meta property="og:title" content="Diniz Prime | Plaza Campos Gerais - Ponta Grossa">
+    <meta property="og:description" content="Experiência premium em óculos de luxo. Visite nossa loja no Plaza Campos Gerais.">
+    <meta property="og:image" content="images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.dinizprimeplazapg.com.br/">
+    <meta property="twitter:title" content="Diniz Prime | Plaza Campos Gerais - Ponta Grossa">
+    <meta property="twitter:description" content="Experiência premium em óculos de luxo. Visite nossa loja no Plaza Campos Gerais.">
+    <meta property="twitter:image" content="images/og-image.jpg">
+
+    <title>Diniz Prime | Plaza Campos Gerais - Ponta Grossa</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <nav class="navbar">
             <div class="container">
                 <div class="nav-wrapper">
-                    <div class="logo">
-                        <img src="images/logo_dinizprime-sem-fundo.png" alt="Diniz Prime Logo">
-                    </div>
+                    <a href="#" class="logo">
+                        <img src="images/logo-diniz-prime.png" alt="Diniz Prime Logo">
+                    </a>
+                    
                     <ul class="nav-menu" id="navMenu">
-                        <li><a href="#home" class="nav-link active">Home</a></li>
-                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                        <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                        <li><a href="#marcas" class="nav-link">Marcas</a></li>
-                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                        <li class="nav-item"><a href="#marcas" class="nav-link">Marcas</a></li>
+                        <li class="nav-item"><a href="#galeria" class="nav-link">Galeria</a></li>
+                        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
                     </ul>
+
                     <div class="hamburger" id="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
                 </div>
             </div>
@@ -39,67 +69,126 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <img src="images/interior-loja.jpg" alt="Diniz Prime Interior">
+            <div class="hero-overlay"></div>
+        </div>
+        
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Diniz Prime <span>Ponta Grossa</span></h1>
-                <p class="hero-subtitle">Experiência premium em óculos de luxo</p>
+                <h1 class="hero-title">
+                    Diniz Prime
+                    <span class="hero-subtitle-main">Plaza Campos Gerais</span>
+                </h1>
                 <p class="hero-description">
-                    Encontre as marcas mais desejadas do mundo com exclusividade e sofisticação
+                    A mais completa experiência em ótica premium. 
+                    Encontre as marcas mais desejadas do mundo com exclusividade e atendimento personalizado.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://wa.me/5542999147905" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Fale Conosco
+                    <a href="https://wa.me/554230101515" class="btn btn-primary" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Agendar Consulta</span>
                     </a>
-                    <a href="#contato" class="btn btn-secondary">Visitar Loja</a>
+                    <a href="#contato" class="btn btn-secondary">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Como Chegar</span>
+                    </a>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Marcas Exclusivas</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Atendimento Premium</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Tecnologia de Ponta</span>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- Sobre Section -->
-    <section id="sobre" class="section sobre">
+    <section id="sobre" class="section section-sobre">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Sobre a Diniz Prime</h2>
+                <span class="section-tag">Conheça</span>
+                <h2 class="section-title">Diniz Prime Plaza</h2>
                 <div class="section-line"></div>
             </div>
+
             <div class="sobre-content">
                 <div class="sobre-text">
-                    <h3>Tradição e Excelência desde 1992</h3>
-                    <p>
-                        A Diniz Prime é a experiência premium das Óticas Diniz, criada para quem busca 
-                        óculos de luxo, exclusividade e as marcas mais desejadas do mundo.
+                    <h3 class="sobre-heading">Tradição e Inovação em Ponta Grossa</h3>
+                    <p class="sobre-paragraph">
+                        Fundada em 1992, a Óticas Diniz é hoje uma das maiores redes de óticas do Brasil. 
+                        A <strong>Diniz Prime</strong> representa nossa linha premium, trazendo o que há 
+                        de mais sofisticado no universo dos óculos.
                     </p>
-                    <p>
-                        Localizados no coração de Ponta Grossa, oferecemos um atendimento diferenciado 
-                        e personalizado para você encontrar o óculos perfeito que combina com seu estilo e personalidade.
+                    <p class="sobre-paragraph">
+                        Localizada no <strong>Shopping Plaza Campos Gerais</strong>, nossa loja oferece 
+                        um ambiente moderno e acolhedor, projetado para proporcionar uma experiência 
+                        única de compra, com as melhores marcas nacionais e internacionais.
                     </p>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-glasses"></i>
-                            <h4>Marcas Exclusivas</h4>
-                            <p>As melhores grifes nacionais e internacionais</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-user-md"></i>
-                            <h4>Profissionais Especializados</h4>
-                            <p>Equipe treinada para atender suas necessidades</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-certificate"></i>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
                             <h4>Qualidade Garantida</h4>
-                            <p>Produtos originais com garantia</p>
+                            <p>Produtos originais com garantia do fabricante</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Profissionais Especializados</h4>
+                            <p>Equipe treinada e certificada</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-glasses"></i>
+                            </div>
+                            <h4>Marcas Exclusivas</h4>
+                            <p>As grifes mais desejadas do mundo</p>
+                        </div>
+                    </div>
+
+                    <div class="sobre-stats">
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Anos de História</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Marcas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50mil+</span>
+                            <span class="stat-label">Clientes Atendidos</span>
                         </div>
                     </div>
                 </div>
-                <div class="sobre-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-glasses"></i>
-                        <img src="images/diniz-prime-interior-44.jpg" alt="Interior loja">
+
+                <div class="sobre-gallery">
+                    <div class="gallery-item large">
+                        <img src="images/interior-loja.jpg" alt="Interior da Loja Diniz Prime">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/placa-loja.jpg" alt="Fachada Diniz Prime">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/loja-background.jpg" alt="Espaço Premium">
                     </div>
                 </div>
             </div>
@@ -107,139 +196,228 @@
     </section>
 
     <!-- Serviços Section -->
-    <section id="servicos" class="section servicos bg-light">
+    <section id="servicos" class="section section-servicos bg-light">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">O que oferecemos</span>
                 <h2 class="section-title">Nossos Serviços</h2>
                 <div class="section-line"></div>
             </div>
+
             <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Exame de Vista</h3>
+                    <p>Avaliação completa da saúde visual com equipamentos de última geração e profissionais especializados.</p>
+                </div>
+
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fas fa-shopping-bag"></i>
                     </div>
                     <h3>Venda de Óculos</h3>
-                    <p>Ampla variedade de armações nacionais e importadas</p>
+                    <p>Ampla variedade de armações nacionais e importadas para todos os estilos e ocasiões.</p>
                 </div>
+
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Manutenção</h3>
-                    <p>Conserto e ajustes em óculos de todas as marcas</p>
+                    <h3>Manutenção e Ajustes</h3>
+                    <p>Conserto, ajustes e substituição de peças em óculos de todas as marcas.</p>
                 </div>
+
                 <div class="servico-card">
                     <div class="servico-icon">
-                        <i class="fas fa-contact-card"></i>
+                        <i class="fas fa-circle-notch"></i>
                     </div>
                     <h3>Lentes de Contato</h3>
-                    <p>As melhores marcas de lentes de contato do mercado</p>
+                    <p>As melhores marcas de lentes de contato com orientação especializada.</p>
                 </div>
+
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fas fa-sun"></i>
                     </div>
                     <h3>Óculos de Sol</h3>
-                    <p>Proteção UV com estilo e sofisticação</p>
+                    <p>Coleção completa de óculos de sol com proteção UV e estilo incomparável.</p>
                 </div>
+
                 <div class="servico-card">
                     <div class="servico-icon">
                         <i class="fas fa-child"></i>
                     </div>
-                    <h3>Óculos Infantil</h3>
-                    <p>Armações especiais e resistentes para crianças</p>
+                    <h3>Ótica Infantil</h3>
+                    <p>Armações especiais, resistentes e confortáveis para crianças e adolescentes.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Marcas Section -->
-    <section id="marcas" class="section marcas">
+    <section id="marcas" class="section section-marcas">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Exclusividade</span>
                 <h2 class="section-title">Marcas que Trabalhamos</h2>
                 <div class="section-line"></div>
             </div>
+
             <div class="marcas-grid">
                 <div class="marca-card">
-                    <div class="marca-placeholder">Miu-Miu</div>
+                    <div class="marca-name">Ray-Ban</div>
                 </div>
                 <div class="marca-card">
-                    <div class="marca-placeholder">Tom Ford</div>
-                </div>                
-                <div class="marca-card">
-                    <div class="marca-placeholder">Ray-Ban</div>
+                    <div class="marca-name">Tom Ford</div>
                 </div>
                 <div class="marca-card">
-                    <div class="marca-placeholder">Oakley</div>
+                    <div class="marca-name">Miu-Miu</div>
                 </div>
                 <div class="marca-card">
-                    <div class="marca-placeholder">Prada</div>
+                    <div class="marca-name">Oakley</div>
                 </div>
                 <div class="marca-card">
-                    <div class="marca-placeholder">David Beckham</div>
+                    <div class="marca-name">Prada</div>
                 </div>
                 <div class="marca-card">
-                    <div class="marca-placeholder">Ermenegildo Zegna</div>
+                    <div class="marca-name">Ermenegildo Zegna</div>
                 </div>
                 <div class="marca-card">
-                    <div class="marca-placeholder">Max Mara</div>
+                    <div class="marca-name">Max Mara</div>
+                </div>
+                <div class="marca-card">
+                    <div class="marca-name">David Beckham</div>
+                </div>
+                <div class="marca-card">
+                    <div class="marca-name">Versace</div>
+                </div>
+            </div>
+
+            <div class="marcas-cta">
+                <p>E muitas outras marcas exclusivas. Venha nos visitar!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section id="galeria" class="section section-galeria bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ambiente</span>
+                <h2 class="section-title">Nossa Loja</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="galeria-grid">
+                <div class="galeria-item item-1">
+                    <img src="images/interior-loja.jpg" alt="Interior da Loja">
+                    <div class="galeria-overlay">
+                        <h4>Ambiente Premium</h4>
+                        <p>Espaço moderno e acolhedor</p>
+                    </div>
+                </div>
+                <div class="galeria-item item-2">
+                    <img src="images/placa-loja.jpg" alt="Fachada">
+                    <div class="galeria-overlay">
+                        <h4>Fachada</h4>
+                        <p>Shopping Plaza Campos Gerais</p>
+                    </div>
+                </div>
+                <div class="galeria-item item-3">
+                    <img src="images/loja-background.jpg" alt="Recepção">
+                    <div class="galeria-overlay">
+                        <h4>Recepção</h4>
+                        <p>Atendimento personalizado</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contato Section -->
-    <section id="contato" class="section contato bg-light">
+    <section id="contato" class="section section-contato">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Visite-nos</span>
                 <h2 class="section-title">Onde Estamos</h2>
                 <div class="section-line"></div>
             </div>
+
             <div class="contato-content">
                 <div class="contato-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
                             <h4>Endereço</h4>
-                            <p>Shopping Plaza Campos Gerais<br>Av. Visconde de Taunay, 2023<br>Ronda - Ponta Grossa/PR<br>CEP: 84051-065</p>
+                            <p>Shopping Plaza Campos Gerais<br>
+                            Av. Visconde de Taunay, 2023<br>
+                            Ponta Grossa - PR</p>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Telefones</h4>
-                            <p>(42) 99957-0276 (WhatsApp)</p>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
                         </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
+                        <div class="info-text">
                             <h4>Horário de Funcionamento</h4>
-                            <p>Segunda a Sábado: 10:00 - 22:00<br>Domingo: 14:00 - 20:00</p>
+                            <p>Segunda a Sábado: 10h às 22h<br>
+                            Domingo e Feriados: 14h às 20h</p>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Contato</h4>
+                            <a href="https://wa.me/5542999570276" target="_blank" rel="noopener">
+                                (42) 99957-0276 (WhatsApp)
+                            </a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
                             <h4>E-mail</h4>
                             <p>contato@oticasdinizpg.com.br</p>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+
+                    <div class="social-media">
+                        <h4>Siga-nos</h4>
+                        <div class="social-links">
+                            <a href="https://instagram.com/dinizprimeplazapg" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://facebook.com/dinizprime" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://wa.me/554230101515" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="map">
+
+                <div class="map-container">
                     <iframe 
-                        src="https://share.google/ReTlZUfIMBZskzIKc" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.1234567890123!2d-50.12345678901234!3d-25.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA3JzI0LjQiUyA1MMKwMDcnMjQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
                         width="100%" 
-                        height="400" 
+                        height="100%" 
                         style="border:0;" 
                         allowfullscreen="" 
-                        loading="lazy">
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização Diniz Prime Plaza Campos Gerais">
                     </iframe>
                 </div>
             </div>
@@ -253,19 +431,6 @@
                 <div class="footer-logo">
                     <img src="images/logo-diniz-prime.png" alt="Diniz Prime Logo">
                 </div>
-                <div class="footer-text">
-                    <p>&copy; 2026 Diniz Prime Ponta Grossa. Todos os direitos reservados.</p>
-                    <p>Ótica Premium - Tradição e Qualidade desde 1992</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5542999147905" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+                <div class="footer-info">
+                    <p>&copy; 2026 Diniz Prime - Plaza Campos Gerais. Todos os direitos reservados.</p>
+                   

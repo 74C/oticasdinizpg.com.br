@@ -1,4 +1,6 @@
-// Menu Mobile Toggle
+// ===================================
+// MENU MOBILE
+// ===================================
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -16,23 +18,33 @@ navLinks.forEach(link => {
     });
 });
 
-// Header scroll effect
-const header = document.querySelector('.header');
+// ===================================
+// HEADER SCROLL EFFECT
+// ===================================
+const header = document.getElementById('header');
+let lastScroll = 0;
+
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.2)';
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        header.classList.add('scrolled');
     } else {
-        header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+        header.classList.remove('scrolled');
     }
+    
+    lastScroll = currentScroll;
 });
 
-// Smooth scroll para links internos
+// ===================================
+// SMOOTH SCROLL
+// ===================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const offsetTop = target.offsetTop - 80;
+            const offsetTop = target.offsetTop - 70;
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -41,7 +53,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Ativar link do menu baseado na seção visível
+// ===================================
+// ACTIVE LINK ON SCROLL
+// ===================================
 const sections = document.querySelectorAll('section[id]');
 
 function highlightMenu() {
@@ -64,7 +78,9 @@ function highlightMenu() {
 
 window.addEventListener('scroll', highlightMenu);
 
-// Animação de entrada dos elementos ao scroll
+// ===================================
+// ANIMAÇÃO DE ENTRADA AO SCROLL
+// ===================================
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -73,44 +89,64 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('visible');
         }
     });
 }, observerOptions);
 
-// Observar cards de serviço e marcas
-document.querySelectorAll('.servico-card, .marca-card, .feature').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.6s ease';
+// Observar elementos
+document.querySelectorAll('.servico-card, .marca-card, .feature-card, .galeria-item, .info-card').forEach(el => {
+    el.classList.add('fade-in');
     observer.observe(el);
 });
 
-// Máscara para telefone (se necessário)
-function phoneMask(value) {
-    return value.replace(/\D/g, '')
-        .replace(/^(\d{2})(\d)/g, '($1) $2')
-        .replace(/(\d)(\d{4})$/, '$1-$2');
-}
+// ===================================
+// PARALLAX EFFECT NO HERO
+// ===================================
+window.addEventListener('scroll', () => {
+    const hero = document.querySelector('.hero-bg img');
+    const scrolled = window.pageYOffset;
+    
+    if (hero && scrolled < window.innerHeight) {
+        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+});
 
-// Validação de formulário (se adicionar formulário)
-function validateForm(form) {
-    const inputs = form.querySelectorAll('input[required], textarea[required]');
-    let isValid = true;
+// ===================================
+// SCROLL TO TOP
+// ===================================
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
 
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            input.style.borderColor = 'red';
-            isValid = false;
-        } else {
-            input.style.borderColor = '#ccc';
-        }
+document.querySelector('.scroll-indicator').addEventListener('click', scrollToTop);
+
+// ===================================
+// LAZY LOADING DE IMAGENS
+// ===================================
+if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
+            }
+        });
     });
 
-    return isValid;
+    document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
+    });
 }
 
-// Mensagem de boas-vindas no console
-console.log('%c👓 Diniz Prime Ponta Grossa', 'color: #c41230; font-size: 20px; font-weight: bold;');
-console.log('%cSite desenvolvido com ❤️ para oferecer a melhor experiência em ótica premium', 'color: #333; font-size: 12px;');
+// ===================================
+// MENSAGEM NO CONSOLE
+// ===================================
+console.log('%c👓 Diniz Prime - Plaza Campos Gerais', 'color: #c41230; font-size: 24px; font-weight: bold;');
+console.log('%cÓtica Premium em Ponta Grossa - PR', 'color: #333; font-size: 14px;');
+console.log('%cDesenvolvido com ❤️ para oferecer a melhor experiência', 'color: #666; font-size: 12px;');
