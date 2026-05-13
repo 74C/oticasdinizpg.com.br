@@ -90,7 +90,7 @@ a {
 }
 
 .logo:hover img {
-    transform: scale(2.05);
+    transform: scale(1.30);
 }
 
 .nav-menu {
