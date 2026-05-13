@@ -302,6 +302,7 @@ body {
 .sobre-image .image-placeholder {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     height: 400px;
+    width: 600px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
